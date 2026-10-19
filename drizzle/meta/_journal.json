@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1789021225136,
+      "tag": "0000_jittery_pestilence",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1789022429302,
+      "tag": "0001_keen_captain_midlands",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789022802008,
+      "tag": "0002_bumpy_master_mold",
+      "breakpoints": true
+    }
+  ]
+}
