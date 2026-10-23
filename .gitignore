@@ -1,3 +1,7 @@
 node_modules/
 .env
 .sites-runtime/
+dist/
+dist-cloudflare/
+.wrangler/
+.dev.vars

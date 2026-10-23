@@ -1,1 +1,17 @@
-{"name":"bouldr-stockroom","version":"0.4.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test tests/*.test.mjs","db:generate":"drizzle-kit generate"},"devDependencies":{"drizzle-kit":"0.31.10","drizzle-orm":"0.45.2"}}
+{
+  "name": "bouldr-stockroom",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "db:generate": "drizzle-kit generate",
+    "build:cloudflare": "node scripts/build-cloudflare.mjs",
+    "pretest": "node scripts/build.mjs && node scripts/build-cloudflare.mjs"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.10",
+    "drizzle-orm": "0.45.2"
+  }
+}

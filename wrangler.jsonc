@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bouldr-stockroom",
+  "main": "src/cloudflare-worker.mjs",
+  "compatibility_date": "2026-10-23",
+  "workers_dev": true,
+  "preview_urls": false,
+  "build": { "command": "node scripts/build-cloudflare.mjs" },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "bouldr-stockroom",
+    "database_id": "REPLACE_WITH_COMPANY_D1_DATABASE_ID",
+    "migrations_dir": "drizzle"
+  }],
+  "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "bouldr-stockroom-photos" }]
+}

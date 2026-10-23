@@ -20,6 +20,10 @@ Targets Cloudflare Workers with Sites-managed authentication, D1 (DB) and R2 (BU
 
 ## Configuration
 
+For individual staff email-code sign-in without ChatGPT, see
+[the independent Cloudflare setup](CLOUDFLARE-SETUP.md). This requires company
+hosting configuration and live verification before use.
+
 `.env.example` contains empty credential settings. Keep real API keys in server-side hosting secrets. This source backup excludes live stock records, uploaded photos and runtime secrets.
 
 See [RELEASE.md](RELEASE.md) for functionality and limitations.
